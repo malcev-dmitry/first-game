@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Начальная страница</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="st.css">
+	</head>
+	<body>
+		<div data-tid="App" class="App" align="center">
+			<div class="pustota"></div>
+			<div class="startgame">
+				<img src="assets/StartGame.png">
+			</div>
+			<div class="memory_game">MEMORY GAME</div>
+			<a href="" data-tid="NewGame-startGame" id="my">
+				<div class="bt_start">
+					<h3>Начать игру</h3>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var snd = new Audio("Everything But The Girl - Missing.mp3");
+	var snd1 = new Audio("ArcadeAlarm01.mp3");
+	snd.play();
+    var a = document.getElementById('my');
+    function timepause()
+    {
+    	setTimeout(function() 
+			{
+				document.location.href = "game.html";
+    		}, 1000);
+    }
+    a.onclick = function() 
+    {
+    	snd1.play();
+    	timepause();
+        return false;
+    }
+		</script>

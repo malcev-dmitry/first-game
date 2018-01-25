@@ -1,0 +1,114 @@
+body
+{
+	background: black;
+	margin: 0;
+	font-family: OpenSans-Bold;
+}
+.App
+{
+	width: 1300px;
+	height: 600px;
+	background: #1C7430;
+	margin: auto;
+	text-align: center;
+	margin-top: 100px;
+}
+.pustota
+{
+	width: 1300px;
+	height: 90px;
+}
+.startgame
+{
+	width: 1300px;
+	height: 260px;
+}
+.memory_game
+{
+	width: 1300px;
+	height: 40px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	font-family: OpenSans-Bold;
+	font-size: 28px;
+	letter-spacing: 0.4px;
+	line-height: 15px;
+}
+.bt_start
+{
+	width: 140px;
+	height: 40px;
+	color: #1C7430;
+	background: #FFFFFF;
+	margin: auto;
+	margin-top: 34px;
+	border-radius: 5px 5px 5px 5px;
+}
+a 
+{
+	text-decoration: none;
+}
+h3
+{
+	position: relative;
+	top: 25%;
+	font-family: OpenSans-Bold;
+	font-size: 16px;
+	color: #1C7430;
+	letter-spacing: 0;
+}
+.pic
+{
+	width: 100px;
+	height: 140px;
+	margin: 10px;
+}
+td
+{
+	width: 110px;
+	height: 150px;
+}
+table
+{
+	margin-left: 300px;
+}
+.new
+{
+	width: 480px;
+	height: 20px;
+	text-align: left;
+	margin-left: 315px;
+	color: #FFFFFF;
+	font-family: OpenSans-Semibold;
+	font-size: 18px;
+	opacity: 0.8;
+	letter-spacing: -0.25px;
+	float: left;
+}
+.ochki
+{
+	width: auto;
+	height: 20px;
+	text-align: right;
+	color: #FFFFFF;
+	font-family: OpenSans-Semibold;
+	font-size: 18px;
+	opacity: 0.8;
+	float: left;
+}
+.cen_pustota
+{
+	width: 230px;
+	height: 20px;
+	text-align: right;
+	color: #FFFFFF;
+	font-family: OpenSans-Semibold;
+	font-size: 18px;
+	opacity: 0.8;
+	float: left;
+}
+.pusto
+{
+	width: 1300px;
+	height: 30px;
+}
