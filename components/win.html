@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Конец</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+
+	<body>
+		<div data-tid="App" class="App" align="center">
+			<div class="pustota"></div>
+			<div class="startgame">
+				<img src="../assets/images/Group%202.png">
+			</div>
+			<div class="memory_game">
+				<p>Поздравляем!</p>
+				<div id="cout"></div>
+			</div>
+			<div class="pusto"></div>
+			<a href="" data-tid="EndGame-retryGame" id="my">
+				<div class="bt_start">
+					<h3>Еще раз</h3>
+				</div>
+			</a>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+    	const snd = new Audio("../assets/music/RollinRock.ogg"),
+			snd1 = new Audio("../assets/music/ArcadeAlarm01.mp3");
+
+        let a = document.getElementById('my');
+
+        setTimeout(() => document.getElementById('cout').innerText = window.location.search.replace('?', ''), 300);
+
+    	snd.play();
+
+        function timepause() {
+        	setTimeout(function()
+    			{
+    				document.location.href = "game.html";
+        		}, 1000);
+        }
+
+        a.onclick = function() {
+        	snd1.play();
+        	timepause();
+            return false;
+        }
+    </script>
+</html>

@@ -2,13 +2,13 @@
 	<head>
 		<title>Начальная страница</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="st.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<div data-tid="App" class="App" align="center">
 			<div class="pustota"></div>
 			<div class="startgame">
-				<img src="assets/StartGame.png">
+				<img src="assets/images/StartGame.png">
 			</div>
 			<div class="memory_game">MEMORY GAME</div>
 			<a href="" data-tid="NewGame-startGame" id="my">
@@ -18,23 +18,24 @@
 			</a>
 		</div>
 	</body>
+	<script type="text/javascript">
+        const snd = new Audio("assets/music/Everything But The Girl - Missing.mp3");
+        const snd1 = new Audio("assets/music/ArcadeAlarm01.mp3");
+
+        snd.play();
+        const a = document.getElementById('my');
+        function timepause()
+        {
+            setTimeout(function()
+            {
+                document.location.href = "./components/game.html";
+            }, 1000);
+        }
+        a.onclick = function()
+        {
+            snd1.play();
+            timepause();
+            return false;
+        }
+	</script>
 </html>
-<script type="text/javascript">
-	var snd = new Audio("Everything But The Girl - Missing.mp3");
-	var snd1 = new Audio("ArcadeAlarm01.mp3");
-	snd.play();
-    var a = document.getElementById('my');
-    function timepause()
-    {
-    	setTimeout(function() 
-			{
-				document.location.href = "game.html";
-    		}, 1000);
-    }
-    a.onclick = function() 
-    {
-    	snd1.play();
-    	timepause();
-        return false;
-    }
-		</script>
