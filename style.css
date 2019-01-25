@@ -9,60 +9,68 @@
 }
 
 body {
-	background: black;
-	margin: 0;
 	font-family: OpenSans-Bold;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: black;
+	color: #fff;
 }
 
 .App {
-	width: 1300px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	background: #1C7430;
-	margin: auto;
+	display: flex;
+	justify-content: center;
 	text-align: center;
-	margin-top: 100px;
 }
 
-.pustota {
-	width: 1300px;
-	height: 90px;
+.center {
+	position: absolute;
+	margin: auto;
+	top: 90px;
 }
 
 .startgame {
-	width: 1300px;
+	width: 100%;
 	height: 260px;
+}
+@media screen and (min-width: 320px ) and (max-width:768px) {
+	.startgame {
+		height: 100%;
+	}
 }
 
 .memory_game {
-	width: 1300px;
+	font-family: OpenSans-Bold;
+	line-height: 15px;
+	width: 100%;
 	height: 40px;
 	margin-top: 20px;
-	color: #FFFFFF;
-	font-family: OpenSans-Bold;
 	font-size: 28px;
 	letter-spacing: 0.4px;
-	line-height: 15px;
 }
 
 .bt_start {
 	width: 140px;
 	height: 40px;
-	color: #1C7430;
-	background: #FFFFFF;
+	background: #fff;
 	margin: auto;
 	margin-top: 34px;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 5px;
 }
 
 a {
 	text-decoration: none;
+	color: #fff;
 }
 
 h3 {
-	position: relative;
-	top: 25%;
 	font-family: OpenSans-Bold;
 	font-size: 16px;
+	position: relative;
+	top: 25%;
 	color: #1C7430;
 	letter-spacing: 0;
 }
@@ -72,14 +80,20 @@ h3 {
 	height: 140px;
 	margin: 10px;
 }
+@media screen and (min-width: 320px ) and (max-width:768px) {
+	.pic {
+		height: 100%;
+	}
+}
+
+table {
+	position: absolute;
+	top: 20px;
+}
 
 td {
 	width: 110px;
 	height: 150px;
-}
-
-table {
-	margin-left: 300px;
 }
 
 .new {
@@ -87,37 +101,20 @@ table {
 	height: 20px;
 	text-align: left;
 	margin-left: 315px;
-	color: #FFFFFF;
-	font-family: OpenSans-Semibold;
-	font-size: 18px;
 	opacity: 0.8;
 	letter-spacing: -0.25px;
 	float: left;
 }
 
-.ochki {
+.score {
 	width: auto;
 	height: 20px;
 	text-align: right;
-	color: #FFFFFF;
-	font-family: OpenSans-Semibold;
-	font-size: 18px;
 	opacity: 0.8;
 	float: left;
 }
 
-.cen_pustota {
-	width: 230px;
-	height: 20px;
-	text-align: right;
-	color: #FFFFFF;
+.font {
 	font-family: OpenSans-Semibold;
 	font-size: 18px;
-	opacity: 0.8;
-	float: left;
-}
-
-.pusto {
-	width: 1300px;
-	height: 30px;
 }
