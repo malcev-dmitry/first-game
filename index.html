@@ -19,24 +19,5 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript">
-        const snd = new Audio("assets/music/Everything But The Girl - Missing.mp3");
-        const snd1 = new Audio("assets/music/ArcadeAlarm01.mp3");
-
-        snd.play();
-        const a = document.getElementById('my');
-        function timepause()
-        {
-            setTimeout(function()
-            {
-                document.location.href = "./components/game.html";
-            }, 1000);
-        }
-        a.onclick = function()
-        {
-            snd1.play();
-            timepause();
-            return false;
-        }
-	</script>
+	<script src="./js/index.js"></script>
 </html>
