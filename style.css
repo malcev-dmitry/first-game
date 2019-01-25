@@ -19,7 +19,8 @@ body {
 
 .App {
 	width: 100%;
-	height: 100%;
+	min-height: 520px;
+    height: 100%;
 	background: #1C7430;
 	display: flex;
 	justify-content: center;
@@ -29,17 +30,12 @@ body {
 .center {
 	position: absolute;
 	margin: auto;
-	top: 90px;
+	top: 10%;
 }
 
 .startgame {
 	width: 100%;
 	height: 260px;
-}
-@media screen and (min-width: 320px ) and (max-width:768px) {
-	.startgame {
-		height: 100%;
-	}
 }
 
 .memory_game {
@@ -56,8 +52,7 @@ body {
 	width: 140px;
 	height: 40px;
 	background: #fff;
-	margin: auto;
-	margin-top: 34px;
+	margin: 34px auto 0 auto;
 	border-radius: 5px;
 }
 
@@ -79,11 +74,6 @@ h3 {
 	width: 100px;
 	height: 140px;
 	margin: 10px;
-}
-@media screen and (min-width: 320px ) and (max-width:768px) {
-	.pic {
-		height: 100%;
-	}
 }
 
 table {
